@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Samantha Sun — UX/UI Designer & Architect</title>
+  <meta name="description" content="Portfolio of Samantha Sun — UX/UI Designer, former architect, and strategic thinker turning complex challenges into meaningful solutions." />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%236600de'/><text x='50%25' y='54%25' dominant-baseline='middle' text-anchor='middle' font-family='Inter,sans-serif' font-weight='700' font-size='18' fill='white'>S</text></svg>" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════ -->
+  <!-- NAVBAR                                  -->
+  <!-- ═══════════════════════════════════════ -->
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">Samantha Sun</a>
+
+      <div class="nav-links">
+        <a href="#works">Works</a>
+        <a href="about.html">About</a>
+        <a href="https://drive.google.com/file/d/1w_XPMa6euR8DnxERqtv3XKmB5-3Wq9x1/view" target="_blank" rel="noopener noreferrer">Resume</a>
+        <a href="#contact" class="nav-cta">Let's Talk</a>
+      </div>
+
+      <button class="nav-hamburger" aria-label="Toggle mobile menu" aria-expanded="false">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="nav-mobile-menu" role="navigation" aria-label="Mobile navigation">
+    <div class="nav-mobile-links">
+      <a href="#works">Works</a>
+      <a href="about.html">About</a>
+      <a href="https://drive.google.com/file/d/1w_XPMa6euR8DnxERqtv3XKmB5-3Wq9x1/view" target="_blank" rel="noopener noreferrer">Resume</a>
+      <a href="#contact">Let's Talk</a>
+    </div>
+  </div>
+
+  <main>
+
+    <!-- ═══════════════════════════════════════ -->
+    <!-- HERO                                    -->
+    <!-- ═══════════════════════════════════════ -->
+    <section class="hero" aria-label="Hero">
+      <div class="container">
+        <div class="hero-content">
+          <p class="hero-typewriter"><span id="typewriter-text"></span><span class="typewriter-cursor">|</span></p>
+          <h1 class="hero-heading">A thinker + maker</h1>
+          <p class="hero-subtext">
+            Who uses UX, critical design thinking and AI driven workflows to turn complex challenges into meaningful solutions
+          </p>
+          <div class="hero-cta">
+            <a href="#works" class="btn btn-primary">
+              See my work
+              <i class="fa-solid fa-arrow-right btn-icon"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════ -->
+    <!-- WORKS                                   -->
+    <!-- ═══════════════════════════════════════ -->
+    <section id="works" aria-label="Works">
+
+      <!-- ── Featured: Cloud Accounts Portal ── -->
+      <div class="project-featured">
+        <div class="project-featured-inner">
+
+          <div class="project-featured-content fade-up">
+            <div class="project-featured-org-block">
+              <div class="project-featured-logo-circle">
+                <img class="fade-up" src="assets/logos/MIT_logo.svg" alt="MIT logo" />
+              </div>
+              <div class="project-featured-org-text">
+                <p class="project-featured-org-name">Massachusetts Institute of Technology</p>
+                <p class="project-featured-org-city">Boston, USA</p>
+              </div>
+            </div>
+            <div class="project-featured-details">
+              <div class="project-featured-detail has-border">
+                <p class="project-featured-categories">Web Design  |  Cloud Services</p>
+                <p class="project-featured-title">Cloud Accounts Portal</p>
+                <p class="project-featured-desc">Easy configuration of cloud products for approved research accounts</p>
+              </div>
+              <div class="project-featured-detail has-border">
+                <p class="project-featured-label">My Role</p>
+                <p class="project-featured-value">UX/UI designer + QA Tester</p>
+              </div>
+              <div class="project-featured-detail has-border">
+                <p class="project-featured-label">Duration</p>
+                <p class="project-featured-value">July 2025 – Sept 2025</p>
+              </div>
+              <div class="project-featured-detail">
+                <p class="project-featured-label">Team</p>
+                <p class="project-featured-value">Project Manager, Developers, UX/UI Designer + Tester</p>
+              </div>
+              <a href="cloudaccounts.html" class="btn btn-primary project-featured-cta">
+                View more <i class="fa-solid fa-arrow-right btn-icon"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="project-featured-image">
+            <img class="fade-up" src="assets/cloud_accounts/Cloud_accounts.png" alt="Cloud Accounts Portal interface on laptop" />
+          </div>
+
+        </div>
+      </div>
+
+      <!-- ── CART ──────────────────────────────── -->
+      <div class="project-entry theme-light content-left" aria-label="CART project">
+        <div class="project-entry-inner">
+            <div class="project-entry-image screenshot cart-frame">
+              <video class="fade-up cart-video" src="assets/cart/cart_video.mov" autoplay loop muted playsinline></video>
+            </div>
+            <div class="project-entry-content fade-up">
+              <div class="project-entry-org-block">
+                <div class="project-entry-logo logo-black logo-mit">
+                  <img class="fade-up" src="assets/logos/MIT_logo.svg" alt="MIT logo" />
+                </div>
+                <div class="project-entry-org-text">
+                  <p class="project-entry-org-name">Massachusetts Institute of Technology</p>
+                  <p class="project-entry-org-city">Boston, USA</p>
+                </div>
+              </div>
+              <div class="project-entry-details">
+                <div class="project-entry-detail has-border">
+                  <p class="project-entry-categories">Web Design  |  Higher Ed Admin</p>
+                  <p class="project-entry-title">CART</p>
+                  <p class="project-entry-desc">Establishing and tracking departmental agreements</p>
+                </div>
+                <div class="project-entry-detail has-border">
+                  <p class="project-entry-label">My Role</p>
+                  <p class="project-entry-value">UX/UI designer + QA Tester</p>
+                </div>
+                <div class="project-entry-detail has-border">
+                  <p class="project-entry-label">Duration</p>
+                  <p class="project-entry-value">Jan 2025 – June 2025</p>
+                </div>
+                <div class="project-entry-detail">
+                  <p class="project-entry-label">Team</p>
+                  <p class="project-entry-value">Developers, UX/UI Designer + Tester</p>
+                </div>
+                <a href="cart.html" class="btn btn-dark project-entry-cta">
+                  View more <i class="fa-solid fa-arrow-right btn-icon"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+      </div>
+
+      <!-- ── Sizamina ──────────────────────────── -->
+      <div class="project-entry theme-dark content-left" aria-label="Sizamina project">
+        <div class="project-entry-inner">
+          <div class="project-entry-content fade-up">
+            <div class="project-entry-org-block">
+              <div class="project-entry-logo logo-green">
+                <img class="fade-up" src="assets/logos/Heineken_logo.png" alt="Heineken logo" />
+              </div>
+              <div class="project-entry-org-text">
+                <p class="project-entry-org-name">The HEINEKEN<br>Company</p>
+                <p class="project-entry-org-city">Amsterdam, Netherlands</p>
+              </div>
+            </div>
+            <div class="project-entry-details">
+              <div class="project-entry-detail has-border">
+                <p class="project-entry-categories">Mobile Design  |  Stock Inventory</p>
+                <p class="project-entry-title">Sizamina</p>
+                <p class="project-entry-desc">Enabling informal traders with mobile business management</p>
+              </div>
+              <div class="project-entry-detail has-border">
+                <p class="project-entry-label">My Role</p>
+                <p class="project-entry-value">Team Lead, Product Owner + UX/UI designer</p>
+              </div>
+              <div class="project-entry-detail has-border">
+                <p class="project-entry-label">Duration</p>
+                <p class="project-entry-value">June 2022 – Oct 2022</p>
+              </div>
+              <div class="project-entry-detail">
+                <p class="project-entry-label">Team</p>
+                <p class="project-entry-value">Service Delivery Manager, Business Analyst, Team Lead, Developers + UX/UI Designer</p>
+              </div>
+              <a href="sizamina.html" class="btn btn-primary project-entry-cta">
+                View more <i class="fa-solid fa-arrow-right btn-icon"></i>
+              </a>
+            </div>
+          </div>
+          <div class="project-entry-image mockup sizamina-frame">
+            <img class="fade-up" src="assets/sizamina/Sizamina.png" alt="Sizamina mobile app" />
+          </div>
+        </div>
+      </div>
+
+      <!-- ── Multiple Quotes ──────────────────── -->
+      <div class="project-entry theme-light content-left" aria-label="Multiple Quotes project">
+        <div class="project-entry-inner">
+          <div class="project-entry-content fade-up">
+            <div class="project-entry-org-block">
+              <div class="project-entry-logo logo-white logo-toyota">
+                <img class="fade-up" src="assets/logos/Toyota_black_logo.jpg" alt="Toyota logo" />
+              </div>
+              <div class="project-entry-org-text">
+                <p class="project-entry-org-name">Toyota South Africa</p>
+                <p class="project-entry-org-city">Johannesburg, South Africa</p>
+              </div>
+            </div>
+            <div class="project-entry-details">
+              <div class="project-entry-detail has-border">
+                <p class="project-entry-categories">Web Design  |  Automotive Financial Solutions</p>
+                <p class="project-entry-title">Multiple Quotes</p>
+                <p class="project-entry-desc">Empowering choice through flexible vehicle options</p>
+              </div>
+              <div class="project-entry-detail has-border">
+                <p class="project-entry-label">My Role</p>
+                <p class="project-entry-value">UX/UI Designer</p>
+              </div>
+              <div class="project-entry-detail has-border">
+                <p class="project-entry-label">Duration</p>
+                <p class="project-entry-value">March 2023 – Dec 2024</p>
+              </div>
+              <div class="project-entry-detail">
+                <p class="project-entry-label">Team</p>
+                <p class="project-entry-value">Product Owner, Business Analyst, Project Manager, Developers + UX/UI Designer</p>
+              </div>
+              <a href="multiple-quotes.html" class="btn btn-dark project-entry-cta">
+                View more <i class="fa-solid fa-arrow-right btn-icon"></i>
+              </a>
+            </div>
+          </div>
+          <div class="project-entry-image screenshot quotes-frame">
+            <video class="fade-up quotes-video" src="assets/multiple_quotes/multiple_quotes.mov" autoplay loop muted playsinline></video>
+          </div>
+        </div>
+      </div>
+
+      <!-- ── Observation App ───────────────────── -->
+      <div class="project-entry theme-dark content-left" aria-label="Observation App project">
+        <div class="project-entry-inner">
+          <div class="project-entry-image mockup observations-frame">
+            <video class="fade-up" src="assets/observations/Observations.mov" autoplay loop muted playsinline></video>
+          </div>
+          <div class="project-entry-content fade-up">
+            <div class="project-entry-org-block">
+              <div class="project-entry-logo logo-cognia">
+                <img class="fade-up" src="assets/logos/Cognia_logo.svg" alt="Cognia logo" />
+              </div>
+              <div class="project-entry-org-text">
+                <p class="project-entry-org-name">Cognia</p>
+                <p class="project-entry-org-city">Arizona, USA</p>
+              </div>
+            </div>
+            <div class="project-entry-details">
+              <div class="project-entry-detail has-border">
+                <p class="project-entry-categories">Mobile Design  |  Accreditation and Learning</p>
+                <p class="project-entry-title">Observation App</p>
+                <p class="project-entry-desc">Conducting classroom observations across selected institutions</p>
+              </div>
+              <div class="project-entry-detail has-border">
+                <p class="project-entry-label">My Role</p>
+                <p class="project-entry-value">UX/UI Designer</p>
+              </div>
+              <div class="project-entry-detail has-border">
+                <p class="project-entry-label">Duration</p>
+                <p class="project-entry-value">July 2025 – Present</p>
+              </div>
+              <div class="project-entry-detail">
+                <p class="project-entry-label">Team</p>
+                <p class="project-entry-value">Project Manager + UX/UI Designers</p>
+              </div>
+              <a href="observations.html" class="btn btn-primary project-entry-cta">
+                View more <i class="fa-solid fa-arrow-right btn-icon"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ── Institutional Dashboard ───────────── -->
+      <div class="project-entry theme-light content-left" aria-label="Institutional Dashboard project">
+        <div class="project-entry-inner">
+          <div class="project-entry-content fade-up">
+            <div class="project-entry-org-block">
+              <div class="project-entry-logo logo-cognia">
+                <img class="fade-up" src="assets/logos/Cognia_logo.svg" alt="Cognia logo" />
+              </div>
+              <div class="project-entry-org-text">
+                <p class="project-entry-org-name">Cognia</p>
+                <p class="project-entry-org-city">Arizona, USA</p>
+              </div>
+            </div>
+            <div class="project-entry-details">
+              <div class="project-entry-detail has-border">
+                <p class="project-entry-categories">Web Design  |  Data Visualisation</p>
+                <p class="project-entry-title">Institutional Dashboard</p>
+                <p class="project-entry-desc">Analysing institution performance data to identify and understand key trends</p>
+              </div>
+              <div class="project-entry-detail has-border">
+                <p class="project-entry-label">My Role</p>
+                <p class="project-entry-value">UX/UI Designer</p>
+              </div>
+              <div class="project-entry-detail has-border">
+                <p class="project-entry-label">Duration</p>
+                <p class="project-entry-value">July 2025 – Present</p>
+              </div>
+              <div class="project-entry-detail">
+                <p class="project-entry-label">Team</p>
+                <p class="project-entry-value">Research + Analytics Specialists, Solutions Manager, Product Manager, Developers + UX/UI designers</p>
+              </div>
+              <a href="dashboard.html" class="btn btn-dark project-entry-cta">
+                View more <i class="fa-solid fa-arrow-right btn-icon"></i>
+              </a>
+            </div>
+          </div>
+          <div class="project-entry-image screenshot dashboard-frame">
+            <video class="fade-up dashboard-video" src="assets/data_dashboard/Data_dashboard.mov" autoplay loop muted playsinline></video>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════ -->
+    <!-- ARCHITECTURE                            -->
+    <!-- ═══════════════════════════════════════ -->
+    <section class="section architecture-section" aria-label="Architecture work">
+      <div class="container">
+        <div class="architecture-header fade-up">
+          <h2 class="section-heading">Architecture</h2>
+          <p class="section-subtext" style="color: var(--clr-text-muted-white); margin-top: 16px;">
+            As an architect, I contributed to a variety of projects, spanning from commercial and hospitality skyscrapers to innovative educational buildings. Through these experiences, I accumulated a comprehensive understanding not just in design but also in project management, engineering and urban development.
+          </p>
+        </div>
+
+        <div class="carousel-wrapper fade-up stagger-2">
+          <div class="carousel-track" role="list" aria-label="Architecture portfolio carousel">
+
+            <div class="carousel-item" role="listitem">
+              <img src="assets/architecture/3d_render.png" alt="3D Rendering architectural work" class="carousel-item-image grow-in" />
+            </div>
+
+            <div class="carousel-item" role="listitem">
+              <img src="assets/architecture/Boys_prep.png" alt="Boys' Prep Classrooms at Saint Stithians" class="carousel-item-image grow-in" />
+            </div>
+
+            <div class="carousel-item" role="listitem">
+              <img src="assets/architecture/Boys_pavilion.png" alt="Boys' Sports Pavilion at Saint Stithians" class="carousel-item-image grow-in" />
+            </div>
+
+            <div class="carousel-item" role="listitem">
+              <img src="assets/architecture/Chateau.png" alt="Château de Villers-Cotterêts in Aisne" class="carousel-item-image grow-in" />
+            </div>
+
+            <div class="carousel-item" role="listitem">
+              <img src="assets/architecture/Deloitte.png" alt="Deloitte offices at Mutual Place, Sandton" class="carousel-item-image grow-in" />
+            </div>
+
+            <div class="carousel-item" role="listitem">
+              <img src="assets/architecture/Mias.png" alt="Mia's Gatehouse in Waterfall City" class="carousel-item-image grow-in" />
+            </div>
+
+            <div class="carousel-item" role="listitem">
+              <img src="assets/architecture/Novotel.png" alt="Novotel and Ibis Hotel at Mutual Place, Sandton" class="carousel-item-image grow-in" />
+            </div>
+
+            <div class="carousel-item" role="listitem">
+              <img src="assets/architecture/Old_mutual.png" alt="Old Mutual building at Mutual Place, Sandton" class="carousel-item-image grow-in" />
+            </div>
+
+            <div class="carousel-item" role="listitem">
+              <img src="assets/architecture/Pop_up.png" alt="Pop-up lift and staircase at Mutual Place, Sandton" class="carousel-item-image grow-in" />
+            </div>
+
+            <div class="carousel-item" role="listitem">
+              <img src="assets/architecture/Portion_6.png" alt="Portion 6 development at Mutual Place, Sandton" class="carousel-item-image grow-in" />
+            </div>
+
+            <div class="carousel-item" role="listitem">
+              <img src="assets/architecture/Elevation.png" alt="Rivonia Elevation at Mutual Place, Sandton" class="carousel-item-image grow-in" />
+            </div>
+
+            <div class="carousel-item" role="listitem">
+              <img src="assets/architecture/Rosebank.png" alt="Rosebank Offices on Tyrwhitt Avenue" class="carousel-item-image grow-in" />
+            </div>
+
+            <div class="carousel-item" role="listitem">
+              <img src="assets/architecture/Rustenburg.png" alt="Rustenburg Mall in Rustenburg" class="carousel-item-image grow-in" />
+            </div>
+
+            <div class="carousel-item" role="listitem">
+              <img src="assets/architecture/Terminus.png" alt="The Terminus at Mutual Place, Sandton" class="carousel-item-image grow-in" />
+            </div>
+
+          </div><!-- /carousel-track -->
+
+          <div class="carousel-controls">
+            <button class="carousel-btn carousel-btn-prev" aria-label="Previous items">
+              <i class="fa-solid fa-arrow-left"></i>
+            </button>
+            <button class="carousel-btn carousel-btn-next" aria-label="Next items">
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+        </div><!-- /carousel-wrapper -->
+      </div><!-- /container -->
+    </section>
+
+  </main>
+
+  <!-- ═══════════════════════════════════════ -->
+  <!-- FOOTER                                  -->
+  <!-- ═══════════════════════════════════════ -->
+  <footer id="contact" class="site-footer" aria-label="Contact and footer">
+    <div class="footer-inner">
+      <h2 class="footer-heading fade-up">Glad you stopped by, lets talk!</h2>
+
+      <div class="footer-bottom-row">
+        <div class="footer-contact fade-up stagger-1">
+        <div class="footer-contact-row">
+          <div class="footer-icon" aria-hidden="true">
+            <i class="fa-solid fa-envelope"></i>
+          </div>
+          <a href="mailto:samantha.sun89@gmail.com" class="footer-link">samantha.sun89@gmail.com</a>
+        </div>
+
+        <div class="footer-contact-row">
+          <div class="footer-icon" aria-hidden="true">
+            <i class="fa-solid fa-users"></i>
+          </div>
+          <div class="footer-social">
+            <a href="https://www.linkedin.com/in/samantha-sun-a6a9158a/" class="footer-link" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <span style="color: var(--clr-border-dark);">·</span>
+            <a href="https://www.instagram.com/samw.ise_/" class="footer-link" target="_blank" rel="noopener noreferrer">Instagram</a>
+          </div>
+        </div>
+      </div>
+      <p class="footer-copyright">© 2026 Samantha Sun. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
