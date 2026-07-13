@@ -1,5 +1,5 @@
 /* =============================================
-   SAMANTHA SUN PORTFOLIO — script.js
+   SAMANTHA SUN PORTFOLIO - script.js
    ============================================= */
 
 (function () {
@@ -75,14 +75,17 @@
   const timelineProgressEl = document.querySelector('.timeline-progress');
   if (timelineEl && timelineTrackEl && timelineProgressEl) {
     let trackHeight = 0;
+    let dotOffsets = [];
+    const dots = timelineEl.querySelectorAll('.timeline-dot');
 
     const measureTrack = () => {
-      const dots = timelineEl.querySelectorAll('.timeline-dot');
       if (!dots.length) return;
-      const lastDot = dots[dots.length - 1];
       const timelineRect = timelineEl.getBoundingClientRect();
-      const dotRect = lastDot.getBoundingClientRect();
-      trackHeight = Math.max(0, (dotRect.top + dotRect.height / 2) - timelineRect.top - 10);
+      dotOffsets = Array.from(dots).map((dot) => {
+        const dotRect = dot.getBoundingClientRect();
+        return (dotRect.top + dotRect.height / 2) - timelineRect.top - 10;
+      });
+      trackHeight = dotOffsets[dotOffsets.length - 1];
       timelineTrackEl.style.height = `${trackHeight}px`;
     };
 
@@ -91,15 +94,23 @@
       const viewportCenter = window.innerHeight * 0.5;
       const progressPx = Math.min(trackHeight, Math.max(0, viewportCenter - rect.top - 10));
       timelineProgressEl.style.height = `${progressPx}px`;
+      dots.forEach((dot, i) => {
+        dot.classList.toggle('is-active', progressPx >= dotOffsets[i]);
+      });
     };
 
-    measureTrack();
-    updateTimelineProgress();
-    window.addEventListener('scroll', updateTimelineProgress, { passive: true });
-    window.addEventListener('resize', () => {
+    const remeasure = () => {
       measureTrack();
       updateTimelineProgress();
-    });
+    };
+
+    remeasure();
+    window.addEventListener('scroll', updateTimelineProgress, { passive: true });
+    window.addEventListener('resize', remeasure);
+    window.addEventListener('load', remeasure);
+    if (window.ResizeObserver) {
+      new ResizeObserver(remeasure).observe(timelineEl);
+    }
   }
 
   /* ─── Image Lightbox (click to enlarge) ─── */
