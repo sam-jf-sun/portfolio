@@ -92,7 +92,11 @@
     const updateTimelineProgress = () => {
       const rect = timelineEl.getBoundingClientRect();
       const viewportCenter = window.innerHeight * 0.5;
-      const progressPx = Math.min(trackHeight, Math.max(0, viewportCenter - rect.top - 10));
+      const doc = document.documentElement;
+      const atPageBottom = window.scrollY + window.innerHeight >= doc.scrollHeight - 2;
+      const progressPx = atPageBottom
+        ? trackHeight
+        : Math.min(trackHeight, Math.max(0, viewportCenter - rect.top - 10));
       timelineProgressEl.style.height = `${progressPx}px`;
       dots.forEach((dot, i) => {
         dot.classList.toggle('is-active', progressPx >= dotOffsets[i]);

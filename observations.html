@@ -154,9 +154,19 @@
               </p>
             </div>
             <div class="timeline-image">
-              <div class="solution-image-wrap fade-up stagger-3">
-                <img src="assets/observations/existing_screens.png" alt="Existing observations app screens showing login, institution selection, and observation flows" class="solution-image" style="margin-top: 0;" />
-                <div class="solution-image-caption">Existing observations app screens</div>
+              <div class="solution-images-grid">
+                <div class="solution-image-wrap fade-up stagger-3">
+                  <img src="assets/observations/existing_login_and_selection.png" alt="Existing app login and institution selection screens" class="solution-image" style="margin-top: 0;" />
+                  <div class="solution-image-caption">Login and institution selection</div>
+                </div>
+                <div class="solution-image-wrap fade-up stagger-3">
+                  <img src="assets/observations/existing_type_and_dashboard.png" alt="Existing app observation type and dashboard screens" class="solution-image" style="margin-top: 0;" />
+                  <div class="solution-image-caption">Observation type and dashboard</div>
+                </div>
+                <div class="solution-image-wrap fade-up stagger-3">
+                  <img src="assets/observations/existing_create_and_observe.png" alt="Existing app create and observe screens" class="solution-image" style="margin-top: 0;" />
+                  <div class="solution-image-caption">Create and observe flow</div>
+                </div>
               </div>
             </div>
           </div>
@@ -172,7 +182,7 @@
             </div>
             <div class="timeline-image">
               <div class="solution-image-wrap fade-up stagger-3">
-                <img src="assets/observations/merging_app.png" alt="The eProve workspace app interface being merged into Observations" class="solution-image" style="margin-top: 0;" />
+                <img src="assets/observations/merging_app.png" alt="The eProve workspace app interface being merged into Observations" class="solution-image" style="margin-top: 0; max-width: 340px; margin-inline: auto;" />
                 <div class="solution-image-caption">The eProve workspace app being merged in</div>
               </div>
             </div>
@@ -205,20 +215,107 @@
           <div class="timeline-item" aria-label="Solution: Prototyping Designs">
             <div class="timeline-marker"><span class="timeline-dot">05</span></div>
             <div class="timeline-content">
-              <h2 class="solution-title fade-up stagger-1">Prototyping Designs <span style="font-size: var(--fs-sm); font-weight: 400; color: var(--clr-text-muted-dark);">(in progress)</span></h2>
+              <h2 class="solution-title fade-up stagger-1">Prototyping Designs</h2>
               <p class="solution-text fade-up stagger-2">
                 To effectively communicate with our client, we created a prototype in Figma. This allows stakeholders to quickly understand the proposed concepts and provide timely feedback. The new design features a more accessible colour scheme from the Cognia brand, promoting a modern and clean aesthetic. Interactions are more intuitive, guiding users seamlessly from the start.
               </p>
             </div>
             <div class="timeline-image">
+              <div class="solution-image-wrap fade-up stagger-3">
+                <video src="assets/observations/observations.mov" class="solution-image" autoplay loop muted playsinline controls onclick="this.requestFullscreen(); this.play();" style="margin-top: 0; cursor: pointer; border-radius: 50px; max-width: 300px; margin-inline: auto;"></video>
+                <div class="solution-image-caption">Prototype walkthrough</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 06 -->
+          <div class="timeline-item" aria-label="Solution: Project Paused">
+            <div class="timeline-marker"><span class="timeline-dot">06</span></div>
+            <div class="timeline-content">
+              <h2 class="solution-title fade-up stagger-1">Project Paused</h2>
+              <p class="solution-text fade-up stagger-2">
+                Like many projects in the real world, this one was paused as other features took priority. By the time we returned to it, the colour and brand needed to be updated to stay aligned with Cognia's evolving identity.
+              </p>
+            </div>
+          </div>
+
+          <!-- 07 -->
+          <div class="timeline-item" id="step-07" aria-label="Solution: Experimenting with AI">
+            <div class="timeline-marker"><span class="timeline-dot">07</span></div>
+            <div class="timeline-content">
+              <h2 class="solution-title fade-up stagger-1">Experimenting with AI</h2>
+              <p class="solution-text fade-up stagger-2">
+                As an experiment with AI, I attempted to rather create the updated Observations tool in Claude Code. The live prototype was built in Next.js using shadcn components to match the current dev environment, versioned in GitHub and deployed through AWS. I also created my own npm package to house the CSS styling exported from Figma, alongside design rules documented in markdown files.
+              </p>
+            </div>
+            <div class="timeline-image">
+              <a href="https://main.dinbaf3qb0jfm.amplifyapp.com/eleot" target="_blank" rel="noopener noreferrer" class="prototype-link-card fade-up stagger-3">
+                <div class="prototype-link-icon"><i class="fa-solid fa-arrow-up-right-from-square"></i></div>
+                <div class="prototype-link-text">
+                  <div class="prototype-link-label">Live Prototype</div>
+                  <div class="prototype-link-url">main.dinbaf3qb0jfm.amplifyapp.com/eleot</div>
+                </div>
+                <i class="fa-solid fa-arrow-right prototype-link-arrow"></i>
+              </a>
+              <div class="solution-image-wrap fade-up stagger-4" style="margin-top: 20px;">
+                <img src="assets/observations/github_repo_npm_package.png" alt="GitHub repository for the npm design package" class="solution-image" style="margin-top: 0;" />
+                <div class="solution-image-caption">GitHub repo for the npm design package</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 08 -->
+          <div class="timeline-item" aria-label="Solution: Blurring Design and Development">
+            <div class="timeline-marker"><span class="timeline-dot">08</span></div>
+            <div class="timeline-content">
+              <h2 class="solution-title fade-up stagger-1">Blurring Design and Development</h2>
+              <p class="solution-text fade-up stagger-2">
+                With a designer now prototyping in real code, using the same tech stack as developers, I got curious about how far that responsibility could bleed into development. Instead of reviewing a developer's code during QA, could we just adjust the UI ourselves? Unfortunately, having a designer spend that much time in the codebase wasn't well received given our tight timelines. Still, it was a lesson learnt: perhaps someday AI can streamline the workflow between designers and developers, cutting down the back-and-forth of QA reviews.
+              </p>
+            </div>
+          </div>
+
+          <!-- 09 -->
+          <div class="timeline-item" aria-label="Solution: Back to Figma">
+            <div class="timeline-marker"><span class="timeline-dot">09</span></div>
+            <div class="timeline-content">
+              <h2 class="solution-title fade-up stagger-1">Back to Figma</h2>
+              <p class="solution-text fade-up stagger-2">
+                I reverted back to Figma, designing updated screens for Observations and enhancing the UI to also be desktop focused.
+              </p>
+            </div>
+            <div class="timeline-image">
               <div class="solution-images-grid">
                 <div class="solution-image-wrap fade-up stagger-3">
-                  <img src="assets/observations/main_image1.png" alt="New Cognia observations app login screen prototype" class="solution-image" style="margin-top: 0;" />
-                  <div class="solution-image-caption">New login screen prototype</div>
+                  <img src="assets/observations/new_observation_screen.png" alt="New desktop-focused observation screen design" class="solution-image" style="margin-top: 0;" />
+                  <div class="solution-image-caption">New observation screen, designed for desktop</div>
                 </div>
                 <div class="solution-image-wrap fade-up stagger-3">
-                  <img src="assets/observations/main_image2.png" alt="New Cognia observations app observation list prototype" class="solution-image" style="margin-top: 0;" />
-                  <div class="solution-image-caption">New observation list prototype</div>
+                  <img src="assets/observations/new_observation_template.png" alt="New desktop-focused observation template design" class="solution-image" style="margin-top: 0;" />
+                  <div class="solution-image-caption">New observation template, designed for desktop</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 10 -->
+          <div class="timeline-item" aria-label="Solution: Design and Dev Misalignment">
+            <div class="timeline-marker"><span class="timeline-dot">10</span></div>
+            <div class="timeline-content">
+              <h2 class="solution-title fade-up stagger-1">Design and Dev Misalignment</h2>
+              <p class="solution-text fade-up stagger-2">
+                Unfortunately, design and development were not aligned due to time constraints, leaving us yet again with a mismatch between the intended design and the shipped output. It does have me curious as to whether other AI methods could help streamline this workflow going forward.
+              </p>
+            </div>
+            <div class="timeline-image">
+              <div class="solution-images-grid">
+                <div class="solution-image-wrap fade-up stagger-3">
+                  <img src="assets/observations/review 1.png" alt="Review of the Observations landing page" class="solution-image" style="margin-top: 0;" />
+                  <div class="solution-image-caption">Dev (left) vs. design (right): landing page</div>
+                </div>
+                <div class="solution-image-wrap fade-up stagger-3">
+                  <img src="assets/observations/review 2.png" alt="Review of the selecting observation type page" class="solution-image" style="margin-top: 0;" />
+                  <div class="solution-image-caption">Dev (left) vs. design (right): observation type page</div>
                 </div>
               </div>
             </div>
