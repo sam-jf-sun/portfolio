@@ -143,6 +143,7 @@
       el.addEventListener('click', () => {
         img.src = el.currentSrc || el.src;
         img.alt = el.alt || '';
+        img.style.background = getComputedStyle(el).backgroundColor;
         overlay.classList.add('is-open');
       });
     });
