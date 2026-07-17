@@ -21,7 +21,20 @@
     <div class="nav-inner">
       <a href="index.html" class="nav-logo">Samantha Sun</a>
       <div class="nav-links">
-        <a href="index.html#works">Works</a>
+        <div class="nav-dropdown">
+          <button type="button" class="nav-dropdown-trigger" aria-haspopup="true" aria-expanded="false">
+            Works <i class="fa-solid fa-chevron-down nav-dropdown-caret" aria-hidden="true"></i>
+          </button>
+          <div class="nav-dropdown-menu" role="menu" aria-label="Projects">
+            <a href="cognia-ecosystem.html" role="menuitem">Cognia Ecosystem</a>
+            <a href="sizamina.html" role="menuitem">Sizamina</a>
+            <a href="cart.html" role="menuitem">CART</a>
+            <a href="observations.html" role="menuitem">Observation App</a>
+            <a href="multiple-quotes.html" role="menuitem">Multiple Quotes</a>
+            <a href="cloudaccounts.html" role="menuitem">Cloud Accounts Portal</a>
+            <a href="dashboard.html" role="menuitem">Institutional Dashboard</a>
+          </div>
+        </div>
         <a href="about.html">About</a>
         <a href="https://drive.google.com/file/d/1w_XPMa6euR8DnxERqtv3XKmB5-3Wq9x1/view" target="_blank" rel="noopener noreferrer">Resume</a>
         <a href="index.html#contact" class="nav-cta">Let's Talk</a>
@@ -34,7 +47,20 @@
 
   <div class="nav-mobile-menu" role="navigation" aria-label="Mobile navigation">
     <div class="nav-mobile-links">
-      <a href="index.html#works">Works</a>
+      <div class="nav-mobile-dropdown">
+        <button type="button" class="nav-mobile-dropdown-trigger" aria-haspopup="true" aria-expanded="false">
+          Works <i class="fa-solid fa-chevron-down nav-dropdown-caret" aria-hidden="true"></i>
+        </button>
+        <div class="nav-mobile-dropdown-menu">
+          <a href="cognia-ecosystem.html">Cognia Ecosystem</a>
+          <a href="sizamina.html">Sizamina</a>
+          <a href="cart.html">CART</a>
+          <a href="observations.html">Observation App</a>
+          <a href="multiple-quotes.html">Multiple Quotes</a>
+          <a href="cloudaccounts.html">Cloud Accounts Portal</a>
+          <a href="dashboard.html">Institutional Dashboard</a>
+        </div>
+      </div>
       <a href="about.html">About</a>
       <a href="https://drive.google.com/file/d/1w_XPMa6euR8DnxERqtv3XKmB5-3Wq9x1/view" target="_blank" rel="noopener noreferrer">Resume</a>
       <a href="index.html#contact">Let's Talk</a>
@@ -45,7 +71,7 @@
 
     <!-- PROJECT HERO -->
     <header class="project-hero project-hero-glass" aria-label="CART project overview">
-      <img src="assets/cart/record_agreement_final.png" alt="CART record an agreement screen on laptop" class="project-hero-glass-image project-hero-glass-image-crop fade-up" />
+      <img src="assets/cart/top_main_page.png" alt="CART dashboard screen on laptop" class="project-hero-glass-image project-hero-glass-image-crop fade-up" />
     </header>
 
     <!-- PROJECT INFO -->
@@ -61,6 +87,13 @@
           <div class="project-info-eyebrow">Project Overview</div>
           <p class="project-overview-text">
             The CART platform manages interdepartmental financial agreements at MIT. Users including Payers, Agreement Owners, Superusers, and Receivers navigate complex nested data structures to establish and track budget commitments.
+          </p>
+        </div>
+
+        <div class="project-info-overview fade-up stagger-4">
+          <div class="project-info-eyebrow">Required Output</div>
+          <p class="project-overview-text">
+            A like-for-like migration from Mendix to a newer tech stack, so any design work was additional on our side.
           </p>
         </div>
 
@@ -250,7 +283,7 @@
             <div class="timeline-content">
               <h2 class="solution-title fade-up stagger-1">Crafting a Better UX/UI Experience</h2>
               <p class="solution-text fade-up stagger-2">
-                I redesigned the interface using the MIT component library, focusing on reducing cognitive overload while maintaining existing workflows through standardised component usage.
+                I redesigned the interface using the MIT component library, focusing on reducing cognitive overload while maintaining existing workflows through standardised component usage. The redesign was never tested with users directly, as the project's core goal was migrating the app from Mendix to a newer tech stack; any enhancement or simplification was additional work on our side. A strict timeline and budget meant user testing and feedback weren't in scope.
               </p>
             </div>
             <div class="timeline-image">
@@ -309,6 +342,17 @@
             </div>
           </div>
 
+          <!-- 08 -->
+          <div class="timeline-item" aria-label="Solution: Getting the Project Over the Line">
+            <div class="timeline-marker"><span class="timeline-dot">08</span></div>
+            <div class="timeline-content">
+              <h2 class="solution-title fade-up stagger-1">Getting the Project Over the Line</h2>
+              <p class="solution-text fade-up stagger-2">
+                We successfully migrated the app to Vue.js within budget and on schedule. Throughout, the balance between what to copy as-is and what to improve was a constant battle, one that left the dev team uncertain at times about what to build. My key role in getting the project over the line went beyond design: it was identifying scope, defining what was fundamental to the flow versus what could be excluded, tracking those decisions on a dashboard, and testing continuously until everything worked.
+              </p>
+            </div>
+          </div>
+
         </div>
       </div>
     </section>
@@ -316,14 +360,17 @@
     <!-- BACK NAVIGATION -->
     <div class="back-nav">
       <div class="container back-nav-row">
-        <a href="index.html#works" class="back-link">
+        <a href="sizamina.html" class="prev-link">
           <i class="fa-solid fa-arrow-left"></i>
-          Back to all works
+          <span class="next-link-text">
+            <span class="next-link-label">Previous project</span>
+            <span class="next-link-name">Sizamina</span>
+          </span>
         </a>
-        <a href="sizamina.html" class="next-link">
+        <a href="observations.html" class="next-link">
           <span class="next-link-text">
             <span class="next-link-label">Next project</span>
-            <span class="next-link-name">Sizamina</span>
+            <span class="next-link-name">Observation App</span>
           </span>
           <i class="fa-solid fa-arrow-right"></i>
         </a>
@@ -336,19 +383,24 @@
   <footer id="contact" class="site-footer" aria-label="Contact and footer">
     <div class="footer-inner">
       <div class="footer-top-row">
-        <h2 class="footer-heading fade-up">Glad you stopped by, lets talk!</h2>
+        <h2 class="footer-heading fade-up">Let's talk!</h2>
         <div class="footer-contact fade-up stagger-1">
           <div class="footer-contact-row">
-            <div class="footer-icon" aria-hidden="true"><i class="fa-solid fa-envelope"></i></div>
-            <a href="mailto:samantha.sun89@gmail.com" class="footer-link">samantha.sun89@gmail.com</a>
-          </div>
-          <div class="footer-contact-row">
-            <div class="footer-icon" aria-hidden="true"><i class="fa-solid fa-users"></i></div>
-            <div class="footer-social">
-              <a href="https://www.linkedin.com/in/samantha-sun-a6a9158a/" class="footer-link" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-              <span style="color: var(--clr-border-dark);">·</span>
-              <a href="https://www.instagram.com/samw.ise_/" class="footer-link" target="_blank" rel="noopener noreferrer">Instagram</a>
+            <div class="footer-email-copy-wrap">
+              <button type="button" class="footer-email-copy" aria-label="Copy email address" data-email="samantha.sun89@gmail.com">
+                <i class="fa-solid fa-envelope"></i>
+                <span>Email</span>
+              </button>
+              <span class="footer-email-tooltip" role="status" aria-live="polite">Copied!</span>
             </div>
+          </div>
+          <div class="footer-social">
+            <a href="https://www.instagram.com/samw.ise_/" class="footer-social-link" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+              <img src="assets/icons/instagram.svg" alt="" class="footer-social-icon" />
+            </a>
+            <a href="https://www.linkedin.com/in/samantha-sun-a6a9158a/" class="footer-social-link" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+              <img src="assets/icons/linkedin.svg" alt="" class="footer-social-icon" />
+            </a>
           </div>
         </div>
       </div>

@@ -21,7 +21,20 @@
     <div class="nav-inner">
       <a href="index.html" class="nav-logo">Samantha Sun</a>
       <div class="nav-links">
-        <a href="index.html#works">Works</a>
+        <div class="nav-dropdown">
+          <button type="button" class="nav-dropdown-trigger" aria-haspopup="true" aria-expanded="false">
+            Works <i class="fa-solid fa-chevron-down nav-dropdown-caret" aria-hidden="true"></i>
+          </button>
+          <div class="nav-dropdown-menu" role="menu" aria-label="Projects">
+            <a href="cognia-ecosystem.html" role="menuitem">Cognia Ecosystem</a>
+            <a href="sizamina.html" role="menuitem">Sizamina</a>
+            <a href="cart.html" role="menuitem">CART</a>
+            <a href="observations.html" role="menuitem">Observation App</a>
+            <a href="multiple-quotes.html" role="menuitem">Multiple Quotes</a>
+            <a href="cloudaccounts.html" role="menuitem">Cloud Accounts Portal</a>
+            <a href="dashboard.html" role="menuitem">Institutional Dashboard</a>
+          </div>
+        </div>
         <a href="about.html">About</a>
         <a href="https://drive.google.com/file/d/1w_XPMa6euR8DnxERqtv3XKmB5-3Wq9x1/view" target="_blank" rel="noopener noreferrer">Resume</a>
         <a href="index.html#contact" class="nav-cta">Let's Talk</a>
@@ -34,7 +47,20 @@
 
   <div class="nav-mobile-menu" role="navigation" aria-label="Mobile navigation">
     <div class="nav-mobile-links">
-      <a href="index.html#works">Works</a>
+      <div class="nav-mobile-dropdown">
+        <button type="button" class="nav-mobile-dropdown-trigger" aria-haspopup="true" aria-expanded="false">
+          Works <i class="fa-solid fa-chevron-down nav-dropdown-caret" aria-hidden="true"></i>
+        </button>
+        <div class="nav-mobile-dropdown-menu">
+          <a href="cognia-ecosystem.html">Cognia Ecosystem</a>
+          <a href="sizamina.html">Sizamina</a>
+          <a href="cart.html">CART</a>
+          <a href="observations.html">Observation App</a>
+          <a href="multiple-quotes.html">Multiple Quotes</a>
+          <a href="cloudaccounts.html">Cloud Accounts Portal</a>
+          <a href="dashboard.html">Institutional Dashboard</a>
+        </div>
+      </div>
       <a href="about.html">About</a>
       <a href="https://drive.google.com/file/d/1w_XPMa6euR8DnxERqtv3XKmB5-3Wq9x1/view" target="_blank" rel="noopener noreferrer">Resume</a>
       <a href="index.html#contact">Let's Talk</a>
@@ -45,7 +71,7 @@
 
     <!-- PROJECT HERO -->
     <header class="project-hero project-hero-glass" aria-label="Sizamina project overview">
-      <img src="assets/sizamina/Sizamina.png" alt="Sizamina mobile app mockup" class="project-hero-glass-image project-hero-glass-image-tilt project-hero-glass-image-crop fade-up" />
+      <img src="assets/sizamina/top_main_image.png" alt="Sizamina mobile app mockup" class="project-hero-glass-image project-hero-glass-image-tilt project-hero-glass-image-crop sizamina-hero-image fade-up" />
     </header>
 
     <!-- PROJECT INFO -->
@@ -61,6 +87,13 @@
           <div class="project-info-eyebrow">Project Overview</div>
           <p class="project-overview-text">
             For informal traders who balance business demands with daily life, losing track of stock means lost revenue and constant worry. Sizamina gives these entrepreneurs secure, mobile access to their inventory, enabling them to monitor stock levels, make informed decisions and run their businesses confidently from anywhere.
+          </p>
+        </div>
+
+        <div class="project-info-overview fade-up stagger-4">
+          <div class="project-info-eyebrow">Required Output</div>
+          <p class="project-overview-text">
+            A live deployed mobile app across pilot outlets.
           </p>
         </div>
 
@@ -179,25 +212,108 @@
           </div>
 
           <!-- 03 -->
-          <div class="timeline-item" aria-label="Solution: Customer Centricity">
+          <div class="timeline-item" aria-label="Solution: Visiting the Pilot Outlets">
             <div class="timeline-marker"><span class="timeline-dot">03</span></div>
             <div class="timeline-content">
-              <h2 class="solution-title fade-up stagger-1">Customer Centricity</h2>
+              <h2 class="solution-title fade-up stagger-1">Visiting the Pilot Outlets</h2>
               <p class="solution-text fade-up stagger-2">
-                Bringing together multidisciplinary perspectives from technology, business and brand teams ensured our solution balanced technical capabilities with business goals. Regular field visits to taverns became a cornerstone of our process and being able to observe how owners manage their businesses uncovered critical insights and ensured the app addressed genuine operational challenges, not assumed ones.
+                We selected five pilot taverns to launch and test Sizamina with. Regular field visits became a cornerstone of our process, letting us observe firsthand how owners manage their businesses day to day.
               </p>
             </div>
             <div class="timeline-image">
-              <div class="solution-image-wrap fade-up stagger-3">
-                <img src="assets/sizamina/Sizamina_project_progress.png" alt="Customer centricity and project progress diagram" class="solution-image" style="margin-top: 0;" />
-                <div class="solution-image-caption">Customer centricity and project progress diagram</div>
+              <div class="solution-images-grid-4">
+                <div class="solution-image-wrap fade-up stagger-3">
+                  <img src="assets/sizamina/outlets.png" alt="The outlets chosen to be part of the MVP launch" class="solution-image" style="margin-top: 0;" />
+                  <div class="solution-image-caption">Outlets chosen for the MVP launch</div>
+                </div>
+                <div class="solution-image-wrap fade-up stagger-3">
+                  <img src="assets/sizamina/charles_place.png" alt="Trade visit to Charles' Place, one of the chosen outlets" class="solution-image" style="margin-top: 0;" />
+                  <div class="solution-image-caption">Trade visit to Charles' Place</div>
+                </div>
               </div>
             </div>
           </div>
 
           <!-- 04 -->
-          <div class="timeline-item" aria-label="Solution: Development">
+          <div class="timeline-item" aria-label="Solution: Gathering Feedback from the Outlets">
             <div class="timeline-marker"><span class="timeline-dot">04</span></div>
+            <div class="timeline-content">
+              <h2 class="solution-title fade-up stagger-1">Gathering Feedback from the Outlets</h2>
+              <p class="solution-text fade-up stagger-2">
+                Being able to observe how owners manage their businesses uncovered critical insights and ensured the app addressed genuine operational challenges, not assumed ones. We surveyed owners, watched them navigate the app to identify problem areas, and documented their comments during each trade visit.
+              </p>
+            </div>
+            <div class="timeline-image">
+              <div class="solution-images-grid">
+                <div class="solution-image-wrap fade-up stagger-3">
+                  <img src="assets/sizamina/feedback_survey.png" alt="Feedback survey used to gather tavern owner input" class="solution-image" style="margin-top: 0;" />
+                  <div class="solution-image-caption">How we asked for feedback</div>
+                </div>
+                <div class="solution-image-wrap fade-up stagger-3">
+                  <img src="assets/sizamina/feedback.png" alt="Feedback gathered from tavern owners" class="solution-image" style="margin-top: 0;" />
+                  <div class="solution-image-caption">The feedback we received</div>
+                </div>
+                <div class="solution-image-wrap fade-up stagger-3">
+                  <img src="assets/sizamina/user_testing.png" alt="Watching users click through the app to identify problem areas" class="solution-image" style="margin-top: 0;" />
+                  <div class="solution-image-caption">User testing on-site</div>
+                </div>
+                <div class="solution-image-wrap fade-up stagger-3">
+                  <img src="assets/sizamina/trade_visit_feedback.png" alt="Comments made by tavern owners during trade visits" class="solution-image" style="margin-top: 0;" />
+                  <div class="solution-image-caption">Documenting comments from tavern owners</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 05 -->
+          <div class="timeline-item" aria-label="Solution: Customer Centricity">
+            <div class="timeline-marker"><span class="timeline-dot">05</span></div>
+            <div class="timeline-content">
+              <h2 class="solution-title fade-up stagger-1">Customer Centricity</h2>
+              <p class="solution-text fade-up stagger-2">
+                Bringing together multidisciplinary perspectives from technology, business and brand teams ensured our solution balanced technical capabilities with business goals.
+              </p>
+            </div>
+            <div class="timeline-image">
+              <div class="solution-images-grid-4">
+                <div class="solution-image-wrap fade-up stagger-3">
+                  <img src="assets/sizamina/Sizamina_project_progress.png" alt="Customer centricity and project progress diagram" class="solution-image" style="margin-top: 0;" />
+                  <div class="solution-image-caption">Customer centricity and project progress diagram</div>
+                </div>
+                <div class="solution-image-wrap fade-up stagger-3">
+                  <img src="assets/sizamina/journey.png" alt="The envisioned journey of Sizamina" class="solution-image" style="margin-top: 0;" />
+                  <div class="solution-image-caption">The envisioned journey of Sizamina</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 06 -->
+          <div class="timeline-item" aria-label="Solution: Project Progress">
+            <div class="timeline-marker"><span class="timeline-dot">06</span></div>
+            <div class="timeline-content">
+              <h2 class="solution-title fade-up stagger-1">Project Progress</h2>
+              <p class="solution-text fade-up stagger-2">
+                I tracked progress and kept everyone aligned through regular meetings and weekly checkpoint reports.
+              </p>
+            </div>
+            <div class="timeline-image">
+              <div class="solution-images-grid-4">
+                <div class="solution-image-wrap fade-up stagger-3">
+                  <img src="assets/sizamina/meetings.png" alt="Project meetings tracking progress and milestones" class="solution-image" style="margin-top: 0;" />
+                  <div class="solution-image-caption">Tracking progress and milestones</div>
+                </div>
+                <div class="solution-image-wrap fade-up stagger-3">
+                  <img src="assets/sizamina/checkpoint_report.png" alt="Weekly checkpoint report to keep everyone informed" class="solution-image" style="margin-top: 0;" />
+                  <div class="solution-image-caption">Weekly checkpoint report to keep everyone informed</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 07 -->
+          <div class="timeline-item" aria-label="Solution: Development">
+            <div class="timeline-marker"><span class="timeline-dot">07</span></div>
             <div class="timeline-content">
               <h2 class="solution-title fade-up stagger-1">Development</h2>
               <p class="solution-text fade-up stagger-2">
@@ -212,13 +328,13 @@
             </div>
           </div>
 
-          <!-- 05 -->
+          <!-- 08 -->
           <div class="timeline-item" aria-label="Solution: The Launch">
-            <div class="timeline-marker"><span class="timeline-dot">05</span></div>
+            <div class="timeline-marker"><span class="timeline-dot">08</span></div>
             <div class="timeline-content">
               <h2 class="solution-title fade-up stagger-1">The Launch</h2>
               <p class="solution-text fade-up stagger-2">
-                We successfully deployed our app across five outlets within twelve weeks. We continued to engage with tavern owners, absorbing their insights and conducting user tests. The user feedback sentiment was overall very positive. One month later, with the assistance of Google Analytics, we began to measure its success, tracking how regularly our tavern owners accessed the app and where they navigated to. The results showed enough positive data for the business to increase deployment to fifty outlets. Sadly, my time at Touchsides ended here, and I was unable to see through the next phase of the project.
+                We successfully deployed our app across five outlets within twelve weeks. We continued to engage with tavern owners, absorbing their insights and conducting user tests. The user feedback sentiment was overall very positive. One month later, with the assistance of Google Analytics, we began to measure its success, tracking how regularly our tavern owners accessed the app and where they navigated to. The results showed enough positive data for the business to increase deployment to fifty outlets.
               </p>
             </div>
             <div class="timeline-image">
@@ -235,6 +351,29 @@
             </div>
           </div>
 
+          <!-- 09 -->
+          <div class="timeline-item" aria-label="Solution: Next Steps">
+            <div class="timeline-marker"><span class="timeline-dot">09</span></div>
+            <div class="timeline-content">
+              <h2 class="solution-title fade-up stagger-1">Next Steps</h2>
+              <p class="solution-text fade-up stagger-2">
+                Part of the future vision for Sizamina includes a PR strategy, giving more people the opportunity to get involved in the project. As part of my Product Owner responsibilities, I kept a backlog of features so we could track progress and continue to improve it. Sadly, my time at Touchsides ended here, and I was unable to see through the next phase of the project.
+              </p>
+            </div>
+            <div class="timeline-image">
+              <div class="solution-images-grid-4">
+                <div class="solution-image-wrap fade-up stagger-3">
+                  <img src="assets/sizamina/PR strategy.png" alt="PR strategy for a future vision of wider involvement" class="solution-image" style="margin-top: 0;" />
+                  <div class="solution-image-caption">PR strategy, a future vision for wider involvement</div>
+                </div>
+                <div class="solution-image-wrap fade-up stagger-3">
+                  <img src="assets/sizamina/future_roadmap.png" alt="Future roadmap and backlog of features" class="solution-image" style="margin-top: 0;" />
+                  <div class="solution-image-caption">Future roadmap and feature backlog</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
     </section>
@@ -242,14 +381,17 @@
     <!-- BACK NAVIGATION -->
     <div class="back-nav">
       <div class="container back-nav-row">
-        <a href="index.html#works" class="back-link">
+        <a href="cognia-ecosystem.html" class="prev-link">
           <i class="fa-solid fa-arrow-left"></i>
-          Back to all works
+          <span class="next-link-text">
+            <span class="next-link-label">Previous project</span>
+            <span class="next-link-name">Cognia Ecosystem</span>
+          </span>
         </a>
-        <a href="multiple-quotes.html" class="next-link">
+        <a href="cart.html" class="next-link">
           <span class="next-link-text">
             <span class="next-link-label">Next project</span>
-            <span class="next-link-name">Multiple Quotes</span>
+            <span class="next-link-name">CART</span>
           </span>
           <i class="fa-solid fa-arrow-right"></i>
         </a>
@@ -262,19 +404,24 @@
   <footer id="contact" class="site-footer" aria-label="Contact and footer">
     <div class="footer-inner">
       <div class="footer-top-row">
-        <h2 class="footer-heading fade-up">Glad you stopped by, lets talk!</h2>
+        <h2 class="footer-heading fade-up">Let's talk!</h2>
         <div class="footer-contact fade-up stagger-1">
           <div class="footer-contact-row">
-            <div class="footer-icon" aria-hidden="true"><i class="fa-solid fa-envelope"></i></div>
-            <a href="mailto:samantha.sun89@gmail.com" class="footer-link">samantha.sun89@gmail.com</a>
-          </div>
-          <div class="footer-contact-row">
-            <div class="footer-icon" aria-hidden="true"><i class="fa-solid fa-users"></i></div>
-            <div class="footer-social">
-              <a href="https://www.linkedin.com/in/samantha-sun-a6a9158a/" class="footer-link" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-              <span style="color: var(--clr-border-dark);">·</span>
-              <a href="https://www.instagram.com/samw.ise_/" class="footer-link" target="_blank" rel="noopener noreferrer">Instagram</a>
+            <div class="footer-email-copy-wrap">
+              <button type="button" class="footer-email-copy" aria-label="Copy email address" data-email="samantha.sun89@gmail.com">
+                <i class="fa-solid fa-envelope"></i>
+                <span>Email</span>
+              </button>
+              <span class="footer-email-tooltip" role="status" aria-live="polite">Copied!</span>
             </div>
+          </div>
+          <div class="footer-social">
+            <a href="https://www.instagram.com/samw.ise_/" class="footer-social-link" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+              <img src="assets/icons/instagram.svg" alt="" class="footer-social-icon" />
+            </a>
+            <a href="https://www.linkedin.com/in/samantha-sun-a6a9158a/" class="footer-social-link" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+              <img src="assets/icons/linkedin.svg" alt="" class="footer-social-icon" />
+            </a>
           </div>
         </div>
       </div>

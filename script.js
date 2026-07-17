@@ -189,6 +189,44 @@
     });
   }
 
+  /* ─── Works Dropdown (desktop) ───────────── */
+  const navDropdown = document.querySelector('.nav-dropdown');
+  const navDropdownTrigger = document.querySelector('.nav-dropdown-trigger');
+
+  if (navDropdown && navDropdownTrigger) {
+    navDropdownTrigger.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const isOpen = navDropdown.classList.toggle('open');
+      navDropdownTrigger.setAttribute('aria-expanded', isOpen);
+    });
+
+    document.addEventListener('click', (e) => {
+      if (!navDropdown.contains(e.target)) {
+        navDropdown.classList.remove('open');
+        navDropdownTrigger.setAttribute('aria-expanded', 'false');
+      }
+    });
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        navDropdown.classList.remove('open');
+        navDropdownTrigger.setAttribute('aria-expanded', 'false');
+      }
+    });
+  }
+
+  /* ─── Works Dropdown (mobile) ────────────── */
+  const navMobileDropdown = document.querySelector('.nav-mobile-dropdown');
+  const navMobileDropdownTrigger = document.querySelector('.nav-mobile-dropdown-trigger');
+
+  if (navMobileDropdown && navMobileDropdownTrigger) {
+    navMobileDropdownTrigger.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const isOpen = navMobileDropdown.classList.toggle('open');
+      navMobileDropdownTrigger.setAttribute('aria-expanded', isOpen);
+    });
+  }
+
   /* ─── Active Nav Link ────────────────────── */
   const currentPath = window.location.pathname.split('/').pop() || 'index.html';
   document.querySelectorAll('.nav-links a, .nav-mobile-links a').forEach((link) => {
@@ -201,8 +239,136 @@
     }
   });
 
+  if (document.querySelector('.nav-dropdown-menu a.active')) {
+    navDropdownTrigger && navDropdownTrigger.classList.add('active');
+  }
+  if (document.querySelector('.nav-mobile-dropdown-menu a.active')) {
+    navMobileDropdownTrigger && navMobileDropdownTrigger.classList.add('active');
+  }
+
+  /* ─── Contact Modal ──────────────────────── */
+  const contactLinks = document.querySelectorAll('a[href$="#contact"]');
+  if (contactLinks.length) {
+    const emailAddress = 'samantha.sun89@gmail.com';
+
+    const modalOverlay = document.createElement('div');
+    modalOverlay.className = 'contact-modal-overlay';
+    modalOverlay.innerHTML = `
+      <div class="contact-modal" role="dialog" aria-modal="true" aria-labelledby="contact-modal-heading">
+        <button class="contact-modal-close" type="button" aria-label="Close">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+        <h3 id="contact-modal-heading" class="contact-modal-heading">Let's talk</h3>
+        <p class="contact-modal-subtext">Feel free to reach out anytime</p>
+        <div class="contact-modal-email-row">
+          <i class="fa-solid fa-envelope contact-modal-email-icon" aria-hidden="true"></i>
+          <span class="contact-modal-email">${emailAddress}</span>
+          <button class="contact-modal-copy-btn" type="button" aria-label="Copy email address">
+            <i class="fa-solid fa-copy"></i>
+          </button>
+        </div>
+        <p class="contact-modal-connect-label">Or connect with me here</p>
+        <div class="contact-modal-social">
+          <a href="https://www.instagram.com/samw.ise_/" class="contact-modal-social-link" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+            <img src="assets/icons/instagram.svg" alt="" class="contact-modal-social-icon" />
+          </a>
+          <a href="https://www.linkedin.com/in/samantha-sun-a6a9158a/" class="contact-modal-social-link" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+            <img src="assets/icons/linkedin.svg" alt="" class="contact-modal-social-icon" />
+          </a>
+        </div>
+      </div>
+    `;
+    document.body.appendChild(modalOverlay);
+
+    const closeBtn = modalOverlay.querySelector('.contact-modal-close');
+    const copyBtn = modalOverlay.querySelector('.contact-modal-copy-btn');
+    const copyIcon = copyBtn.querySelector('i');
+    let copyResetTimer = null;
+
+    const openModal = () => {
+      modalOverlay.classList.add('is-open');
+      document.body.classList.add('modal-open');
+    };
+
+    const closeModal = () => {
+      modalOverlay.classList.remove('is-open');
+      document.body.classList.remove('modal-open');
+    };
+
+    contactLinks.forEach((link) => {
+      link.addEventListener('click', (e) => {
+        e.preventDefault();
+        openModal();
+      });
+    });
+
+    closeBtn.addEventListener('click', closeModal);
+
+    modalOverlay.addEventListener('click', (e) => {
+      if (e.target === modalOverlay) closeModal();
+    });
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && modalOverlay.classList.contains('is-open')) {
+        closeModal();
+      }
+    });
+
+    copyBtn.addEventListener('click', async () => {
+      try {
+        await navigator.clipboard.writeText(emailAddress);
+      } catch (err) {
+        const tempInput = document.createElement('input');
+        tempInput.value = emailAddress;
+        document.body.appendChild(tempInput);
+        tempInput.select();
+        document.execCommand('copy');
+        document.body.removeChild(tempInput);
+      }
+
+      clearTimeout(copyResetTimer);
+      copyBtn.classList.add('is-copied');
+      copyBtn.setAttribute('aria-label', 'Copied!');
+      copyIcon.className = 'fa-solid fa-check';
+
+      copyResetTimer = setTimeout(() => {
+        copyBtn.classList.remove('is-copied');
+        copyBtn.setAttribute('aria-label', 'Copy email address');
+        copyIcon.className = 'fa-solid fa-copy';
+      }, 2000);
+    });
+  }
+
+  /* ─── Footer Email Copy ──────────────────── */
+  document.querySelectorAll('.footer-email-copy').forEach((copyEl) => {
+    const tooltip = copyEl.closest('.footer-email-copy-wrap').querySelector('.footer-email-tooltip');
+    let tooltipResetTimer = null;
+
+    copyEl.addEventListener('click', async () => {
+      const email = copyEl.dataset.email;
+
+      try {
+        await navigator.clipboard.writeText(email);
+      } catch (err) {
+        const tempInput = document.createElement('input');
+        tempInput.value = email;
+        document.body.appendChild(tempInput);
+        tempInput.select();
+        document.execCommand('copy');
+        document.body.removeChild(tempInput);
+      }
+
+      clearTimeout(tooltipResetTimer);
+      tooltip.classList.add('is-visible');
+
+      tooltipResetTimer = setTimeout(() => {
+        tooltip.classList.remove('is-visible');
+      }, 2000);
+    });
+  });
+
   /* ─── Smooth Scrolling for Anchor Links ──── */
-  document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+  document.querySelectorAll('a[href^="#"]:not([href="#contact"])').forEach((anchor) => {
     anchor.addEventListener('click', (e) => {
       const targetId = anchor.getAttribute('href');
       if (targetId === '#') return;

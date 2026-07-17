@@ -16,12 +16,42 @@
 </head>
 <body>
 
+  <!-- ICON SPRITE -->
+  <svg style="position: absolute; width: 0; height: 0; overflow: hidden;" aria-hidden="true">
+    <defs>
+      <symbol id="icon-ai-sparkle" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"/>
+        <path d="M20 3v4"/>
+        <path d="M22 5h-4"/>
+        <path d="M4 17v2"/>
+        <path d="M5 18H3"/>
+      </symbol>
+      <symbol id="icon-user" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/>
+        <circle cx="12" cy="7" r="4"/>
+      </symbol>
+    </defs>
+  </svg>
+
   <!-- NAVBAR -->
-  <nav class="navbar" role="navigation" aria-label="Main navigation">
+  <nav class="navbar navbar-dark" role="navigation" aria-label="Main navigation">
     <div class="nav-inner">
       <a href="index.html" class="nav-logo">Samantha Sun</a>
       <div class="nav-links">
-        <a href="index.html#works">Works</a>
+        <div class="nav-dropdown">
+          <button type="button" class="nav-dropdown-trigger" aria-haspopup="true" aria-expanded="false">
+            Works <i class="fa-solid fa-chevron-down nav-dropdown-caret" aria-hidden="true"></i>
+          </button>
+          <div class="nav-dropdown-menu" role="menu" aria-label="Projects">
+            <a href="cognia-ecosystem.html" role="menuitem">Cognia Ecosystem</a>
+            <a href="sizamina.html" role="menuitem">Sizamina</a>
+            <a href="cart.html" role="menuitem">CART</a>
+            <a href="observations.html" role="menuitem">Observation App</a>
+            <a href="multiple-quotes.html" role="menuitem">Multiple Quotes</a>
+            <a href="cloudaccounts.html" role="menuitem">Cloud Accounts Portal</a>
+            <a href="dashboard.html" role="menuitem">Institutional Dashboard</a>
+          </div>
+        </div>
         <a href="about.html">About</a>
         <a href="https://drive.google.com/file/d/1w_XPMa6euR8DnxERqtv3XKmB5-3Wq9x1/view" target="_blank" rel="noopener noreferrer">Resume</a>
         <a href="index.html#contact" class="nav-cta">Let's Talk</a>
@@ -34,7 +64,20 @@
 
   <div class="nav-mobile-menu" role="navigation" aria-label="Mobile navigation">
     <div class="nav-mobile-links">
-      <a href="index.html#works">Works</a>
+      <div class="nav-mobile-dropdown">
+        <button type="button" class="nav-mobile-dropdown-trigger" aria-haspopup="true" aria-expanded="false">
+          Works <i class="fa-solid fa-chevron-down nav-dropdown-caret" aria-hidden="true"></i>
+        </button>
+        <div class="nav-mobile-dropdown-menu">
+          <a href="cognia-ecosystem.html">Cognia Ecosystem</a>
+          <a href="sizamina.html">Sizamina</a>
+          <a href="cart.html">CART</a>
+          <a href="observations.html">Observation App</a>
+          <a href="multiple-quotes.html">Multiple Quotes</a>
+          <a href="cloudaccounts.html">Cloud Accounts Portal</a>
+          <a href="dashboard.html">Institutional Dashboard</a>
+        </div>
+      </div>
       <a href="about.html">About</a>
       <a href="https://drive.google.com/file/d/1w_XPMa6euR8DnxERqtv3XKmB5-3Wq9x1/view" target="_blank" rel="noopener noreferrer">Resume</a>
       <a href="index.html#contact">Let's Talk</a>
@@ -46,8 +89,13 @@
     <!-- PAGE HERO -->
     <header class="about-hero" aria-label="About hero">
       <div class="container">
-        <h1 class="about-hero-heading fade-up">Hi,</h1>
-        <p class="about-hero-sub fade-up stagger-1">Happy you're here!</p>
+        <div class="about-hero-row">
+          <div class="about-hero-text">
+            <h1 class="about-hero-heading fade-up">Hi,</h1>
+            <p class="about-hero-sub fade-up stagger-1">Happy you're here!</p>
+          </div>
+          <img src="assets/about/profile_pic.png" alt="Samantha Sun profile photo" class="about-hero-mobile-photo fade-up" />
+        </div>
       </div>
     </header>
 
@@ -72,60 +120,82 @@
     <section class="section about-ai-section" aria-label="How I use AI">
       <div class="container">
         <div class="fade-up">
-          <h2 class="section-heading">How I use AI currently</h2>
+          <h2 class="section-heading">AI and me</h2>
           <p class="section-subtext" style="margin-top: 12px;">
-            AI is embedded across almost every phase of my process now, not as a novelty but as a part of how I work. The shift is that AI has compressed the time between having an idea and having something tangible to react to.
+            AI is embedded across every phase of my process now, not as a novelty but as a part of how I work. The shift is that it has compressed the time between having an idea and having something tangible to react to. Although I work closely with AI, there are still things that remain in my hands, such as taste, craft and judgement.
           </p>
         </div>
 
-        <div class="about-ai-list">
+        <div class="about-ai-grid fade-up stagger-1">
 
-          <div class="about-ai-item fade-up stagger-1">
-            <div class="about-ai-item-left">
-              <span class="about-ai-number">01</span>
-              <span class="about-ai-title">Discovery &amp; research</span>
-            </div>
-            <p class="about-ai-desc">I use Notion AI to transcribe user interviews and stakeholder meetings in real time</p>
+          <div class="about-ai-cell about-ai-head about-ai-head-area">Area</div>
+          <div class="about-ai-cell about-ai-head">
+            <svg class="about-ai-icon" aria-hidden="true"><use href="#icon-ai-sparkle"></use></svg>
+            What AI does
+          </div>
+          <div class="about-ai-cell about-ai-head">
+            <svg class="about-ai-icon" aria-hidden="true"><use href="#icon-user"></use></svg>
+            What I still do
           </div>
 
-          <div class="about-ai-item fade-up stagger-2">
-            <div class="about-ai-item-left">
-              <span class="about-ai-number">02</span>
-              <span class="about-ai-title">Problem Framing &amp; Strategy</span>
-            </div>
-            <p class="about-ai-desc">I use Claude for the thinking-heavy lifting like sharpening problem statements, stress-testing design rationale and even pushing back on my assumptions</p>
+          <div class="about-ai-cell about-ai-area">Understanding</div>
+          <div class="about-ai-cell">
+            <span class="about-ai-mobile-label"><svg class="about-ai-icon" aria-hidden="true"><use href="#icon-ai-sparkle"></use></svg>What AI does</span>
+            Does secondary research and pulls data and surveys in a short time
+          </div>
+          <div class="about-ai-cell">
+            <span class="about-ai-mobile-label"><svg class="about-ai-icon" aria-hidden="true"><use href="#icon-user"></use></svg>What I still do</span>
+            Real-time user engagement where I read body language, adapt questions and build rapport with people
           </div>
 
-          <div class="about-ai-item fade-up stagger-3">
-            <div class="about-ai-item-left">
-              <span class="about-ai-number">03</span>
-              <span class="about-ai-title">Ideation &amp; Concept Generation</span>
-            </div>
-            <p class="about-ai-desc">Before I touch Figma, I'll use Claude or Gemini to rapidly generate a range of conceptual directions in plain language</p>
+          <div class="about-ai-cell about-ai-area">Inspiration</div>
+          <div class="about-ai-cell">
+            <span class="about-ai-mobile-label"><svg class="about-ai-icon" aria-hidden="true"><use href="#icon-ai-sparkle"></use></svg>What AI does</span>
+            Brainstorms starting points, has a wide pool of references to pull from
+          </div>
+          <div class="about-ai-cell">
+            <span class="about-ai-mobile-label"><svg class="about-ai-icon" aria-hidden="true"><use href="#icon-user"></use></svg>What I still do</span>
+            Spark the new idea and synthesise trends into something original, not just remixed
           </div>
 
-          <div class="about-ai-item fade-up stagger-4">
-            <div class="about-ai-item-left">
-              <span class="about-ai-number">04</span>
-              <span class="about-ai-title">Visual Exploration</span>
-            </div>
-            <p class="about-ai-desc">I use Whisk to generate reference imagery that's closer to what I'm actually envisioning</p>
+          <div class="about-ai-cell about-ai-area">Shaping</div>
+          <div class="about-ai-cell">
+            <span class="about-ai-mobile-label"><svg class="about-ai-icon" aria-hidden="true"><use href="#icon-ai-sparkle"></use></svg>What AI does</span>
+            Prototypes and simulates interactions fast, flags missed states
+          </div>
+          <div class="about-ai-cell">
+            <span class="about-ai-mobile-label"><svg class="about-ai-icon" aria-hidden="true"><use href="#icon-user"></use></svg>What I still do</span>
+            Define the actual system logic of what happens when and why, based on real user intent
           </div>
 
-          <div class="about-ai-item fade-up stagger-5">
-            <div class="about-ai-item-left">
-              <span class="about-ai-number">05</span>
-              <span class="about-ai-title">Production in Figma</span>
-            </div>
-            <p class="about-ai-desc">I use Figma Make to move from rough concepts to testable prototypes much faster, particularly for component variants and responsive layout exploration</p>
+          <div class="about-ai-cell about-ai-area">Making</div>
+          <div class="about-ai-cell">
+            <span class="about-ai-mobile-label"><svg class="about-ai-icon" aria-hidden="true"><use href="#icon-ai-sparkle"></use></svg>What AI does</span>
+            Builds interactive prototypes quickly from mockups/prompts
+          </div>
+          <div class="about-ai-cell">
+            <span class="about-ai-mobile-label"><svg class="about-ai-icon" aria-hidden="true"><use href="#icon-user"></use></svg>What I still do</span>
+            Feed AI the right mockups and prompts in the first place, this is the taste and judgement part
           </div>
 
-          <div class="about-ai-item fade-up stagger-6">
-            <div class="about-ai-item-left">
-              <span class="about-ai-number">06</span>
-              <span class="about-ai-title">Interactive Concepts</span>
-            </div>
-            <p class="about-ai-desc">I use Claude Code to build quick, functioning prototypes, giving developers a hands-on feel for both the UX and UI vision behind a project rather than just a static mockup. <a href="observations.html#step-07" style="color: var(--clr-purple); text-decoration: underline; text-underline-offset: 3px;">See this in action in the Observations App case study</a></p>
+          <div class="about-ai-cell about-ai-area">Validating</div>
+          <div class="about-ai-cell">
+            <span class="about-ai-mobile-label"><svg class="about-ai-icon" aria-hidden="true"><use href="#icon-ai-sparkle"></use></svg>What AI does</span>
+            Captures and summarises usability session responses
+          </div>
+          <div class="about-ai-cell">
+            <span class="about-ai-mobile-label"><svg class="about-ai-icon" aria-hidden="true"><use href="#icon-user"></use></svg>What I still do</span>
+            Run the actual session, moderate it and read what's unsaid, then decide what to fix
+          </div>
+
+          <div class="about-ai-cell about-ai-area">Influencing</div>
+          <div class="about-ai-cell">
+            <span class="about-ai-mobile-label"><svg class="about-ai-icon" aria-hidden="true"><use href="#icon-ai-sparkle"></use></svg>What AI does</span>
+            Helps draft personas for storytelling support
+          </div>
+          <div class="about-ai-cell">
+            <span class="about-ai-mobile-label"><svg class="about-ai-icon" aria-hidden="true"><use href="#icon-user"></use></svg>What I still do</span>
+            Read the room, navigate internal politics and build trust over time
           </div>
 
         </div>
@@ -293,19 +363,24 @@
   <footer id="contact" class="site-footer" aria-label="Contact and footer">
     <div class="footer-inner">
       <div class="footer-top-row">
-        <h2 class="footer-heading fade-up">Glad you stopped by, lets talk!</h2>
+        <h2 class="footer-heading fade-up">Let's talk!</h2>
         <div class="footer-contact fade-up stagger-1">
           <div class="footer-contact-row">
-            <div class="footer-icon" aria-hidden="true"><i class="fa-solid fa-envelope"></i></div>
-            <a href="mailto:samantha.sun89@gmail.com" class="footer-link">samantha.sun89@gmail.com</a>
-          </div>
-          <div class="footer-contact-row">
-            <div class="footer-icon" aria-hidden="true"><i class="fa-solid fa-users"></i></div>
-            <div class="footer-social">
-              <a href="https://www.linkedin.com/in/samantha-sun-a6a9158a/" class="footer-link" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-              <span style="color: var(--clr-border-dark);">·</span>
-              <a href="https://www.instagram.com/samw.ise_/" class="footer-link" target="_blank" rel="noopener noreferrer">Instagram</a>
+            <div class="footer-email-copy-wrap">
+              <button type="button" class="footer-email-copy" aria-label="Copy email address" data-email="samantha.sun89@gmail.com">
+                <i class="fa-solid fa-envelope"></i>
+                <span>Email</span>
+              </button>
+              <span class="footer-email-tooltip" role="status" aria-live="polite">Copied!</span>
             </div>
+          </div>
+          <div class="footer-social">
+            <a href="https://www.instagram.com/samw.ise_/" class="footer-social-link" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+              <img src="assets/icons/instagram.svg" alt="" class="footer-social-icon" />
+            </a>
+            <a href="https://www.linkedin.com/in/samantha-sun-a6a9158a/" class="footer-social-link" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+              <img src="assets/icons/linkedin.svg" alt="" class="footer-social-icon" />
+            </a>
           </div>
         </div>
       </div>

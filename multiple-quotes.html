@@ -21,7 +21,20 @@
     <div class="nav-inner">
       <a href="index.html" class="nav-logo">Samantha Sun</a>
       <div class="nav-links">
-        <a href="index.html#works">Works</a>
+        <div class="nav-dropdown">
+          <button type="button" class="nav-dropdown-trigger" aria-haspopup="true" aria-expanded="false">
+            Works <i class="fa-solid fa-chevron-down nav-dropdown-caret" aria-hidden="true"></i>
+          </button>
+          <div class="nav-dropdown-menu" role="menu" aria-label="Projects">
+            <a href="cognia-ecosystem.html" role="menuitem">Cognia Ecosystem</a>
+            <a href="sizamina.html" role="menuitem">Sizamina</a>
+            <a href="cart.html" role="menuitem">CART</a>
+            <a href="observations.html" role="menuitem">Observation App</a>
+            <a href="multiple-quotes.html" role="menuitem">Multiple Quotes</a>
+            <a href="cloudaccounts.html" role="menuitem">Cloud Accounts Portal</a>
+            <a href="dashboard.html" role="menuitem">Institutional Dashboard</a>
+          </div>
+        </div>
         <a href="about.html">About</a>
         <a href="https://drive.google.com/file/d/1w_XPMa6euR8DnxERqtv3XKmB5-3Wq9x1/view" target="_blank" rel="noopener noreferrer">Resume</a>
         <a href="index.html#contact" class="nav-cta">Let's Talk</a>
@@ -34,7 +47,20 @@
 
   <div class="nav-mobile-menu" role="navigation" aria-label="Mobile navigation">
     <div class="nav-mobile-links">
-      <a href="index.html#works">Works</a>
+      <div class="nav-mobile-dropdown">
+        <button type="button" class="nav-mobile-dropdown-trigger" aria-haspopup="true" aria-expanded="false">
+          Works <i class="fa-solid fa-chevron-down nav-dropdown-caret" aria-hidden="true"></i>
+        </button>
+        <div class="nav-mobile-dropdown-menu">
+          <a href="cognia-ecosystem.html">Cognia Ecosystem</a>
+          <a href="sizamina.html">Sizamina</a>
+          <a href="cart.html">CART</a>
+          <a href="observations.html">Observation App</a>
+          <a href="multiple-quotes.html">Multiple Quotes</a>
+          <a href="cloudaccounts.html">Cloud Accounts Portal</a>
+          <a href="dashboard.html">Institutional Dashboard</a>
+        </div>
+      </div>
       <a href="about.html">About</a>
       <a href="https://drive.google.com/file/d/1w_XPMa6euR8DnxERqtv3XKmB5-3Wq9x1/view" target="_blank" rel="noopener noreferrer">Resume</a>
       <a href="index.html#contact">Let's Talk</a>
@@ -45,7 +71,7 @@
 
     <!-- PROJECT HERO -->
     <header class="project-hero project-hero-glass" aria-label="Multiple Quotes project overview">
-      <img src="assets/multiple_quotes/multiple_quotes_main.png" alt="E-Toyota multiple quotes tool main screen" class="project-hero-glass-image project-hero-glass-image-crop fade-up" style="margin-bottom: 0;" />
+      <img src="assets/multiple_quotes/top_main_page.png" alt="E-Toyota multiple quotes tool main screen" class="project-hero-glass-image project-hero-glass-image-crop fade-up" />
     </header>
 
     <!-- PROJECT INFO -->
@@ -61,6 +87,13 @@
           <div class="project-info-eyebrow">Project Overview</div>
           <p class="project-overview-text">
             The KINTO model allows customers to borrow vehicles while paying fixed monthly instalments over a set period. The multiple quotes feature enables customers to select from curated quote options displaying different vehicle models, accessories, and discounts for informed decision-making.
+          </p>
+        </div>
+
+        <div class="project-info-overview fade-up stagger-4">
+          <div class="project-info-eyebrow">Required Output</div>
+          <p class="project-overview-text">
+            A shipped, live feature on E-Toyota One.
           </p>
         </div>
 
@@ -345,14 +378,17 @@
     <!-- BACK NAVIGATION -->
     <div class="back-nav">
       <div class="container back-nav-row">
-        <a href="index.html#works" class="back-link">
+        <a href="observations.html" class="prev-link">
           <i class="fa-solid fa-arrow-left"></i>
-          Back to all works
+          <span class="next-link-text">
+            <span class="next-link-label">Previous project</span>
+            <span class="next-link-name">Observation App</span>
+          </span>
         </a>
-        <a href="observations.html" class="next-link">
+        <a href="cloudaccounts.html" class="next-link">
           <span class="next-link-text">
             <span class="next-link-label">Next project</span>
-            <span class="next-link-name">Observation App</span>
+            <span class="next-link-name">Cloud Accounts Portal</span>
           </span>
           <i class="fa-solid fa-arrow-right"></i>
         </a>
@@ -365,19 +401,24 @@
   <footer id="contact" class="site-footer" aria-label="Contact and footer">
     <div class="footer-inner">
       <div class="footer-top-row">
-        <h2 class="footer-heading fade-up">Glad you stopped by, lets talk!</h2>
+        <h2 class="footer-heading fade-up">Let's talk!</h2>
         <div class="footer-contact fade-up stagger-1">
           <div class="footer-contact-row">
-            <div class="footer-icon" aria-hidden="true"><i class="fa-solid fa-envelope"></i></div>
-            <a href="mailto:samantha.sun89@gmail.com" class="footer-link">samantha.sun89@gmail.com</a>
-          </div>
-          <div class="footer-contact-row">
-            <div class="footer-icon" aria-hidden="true"><i class="fa-solid fa-users"></i></div>
-            <div class="footer-social">
-              <a href="https://www.linkedin.com/in/samantha-sun-a6a9158a/" class="footer-link" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-              <span style="color: var(--clr-border-dark);">·</span>
-              <a href="https://www.instagram.com/samw.ise_/" class="footer-link" target="_blank" rel="noopener noreferrer">Instagram</a>
+            <div class="footer-email-copy-wrap">
+              <button type="button" class="footer-email-copy" aria-label="Copy email address" data-email="samantha.sun89@gmail.com">
+                <i class="fa-solid fa-envelope"></i>
+                <span>Email</span>
+              </button>
+              <span class="footer-email-tooltip" role="status" aria-live="polite">Copied!</span>
             </div>
+          </div>
+          <div class="footer-social">
+            <a href="https://www.instagram.com/samw.ise_/" class="footer-social-link" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+              <img src="assets/icons/instagram.svg" alt="" class="footer-social-icon" />
+            </a>
+            <a href="https://www.linkedin.com/in/samantha-sun-a6a9158a/" class="footer-social-link" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+              <img src="assets/icons/linkedin.svg" alt="" class="footer-social-icon" />
+            </a>
           </div>
         </div>
       </div>
