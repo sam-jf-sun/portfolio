@@ -2242,6 +2242,29 @@ body {
   }
 }
 
+/* Nav-links are visible from 800px up (unlike mobile, which hides them
+   behind a hamburger), but the hero image only clears them on its own via
+   the --max-width container once the viewport is far past it. Rather than
+   pin that crossover to an exact pixel guess, give the image this same
+   clearance at every width from 800px up, so no in-between laptop/desktop
+   resolution can land in a gap between two differently-tuned breakpoints. */
+@media (min-width: 800px) {
+  .project-hero-glass {
+    height: 620px;
+    padding: 0 var(--pad-desktop);
+  }
+
+  .project-hero-glass-duo .project-hero-glass-image {
+    max-width: 44%;
+    max-height: 540px;
+  }
+
+  .project-hero-glass-image-tilt.project-hero-glass-image-crop.sizamina-hero-image {
+    max-width: 270px;
+    margin-bottom: -95px;
+  }
+}
+
 /* Project Info - combined title, overview & meta grid on light glass background */
 .project-info-section {
   background: var(--theme-secondary);
