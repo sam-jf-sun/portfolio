@@ -540,7 +540,7 @@ p {
   font-size: var(--fs-md);
   color: var(--clr-text-muted-white);
   margin-bottom: 40px;
-  max-width: 560px;
+  max-width: 700px;
   line-height: 1.6;
   animation: heroEntrance 0.8s ease 0.5s both;
 }
