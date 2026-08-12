@@ -88,9 +88,8 @@
       <div class="container">
         <div class="about-bio-text fade-up">
           <p>You might be wondering, have I actually shipped AI-involved projects? <strong>Yes.</strong></p>
-          <p>So where are they? I'd love to point to one clean, end-to-end example of designing for AI, with AI, and shipping with AI. But the truth is, I don't yet have a project I'm proud enough of to showcase.</p>
-          <p>My AI work has happened in pieces, some prototyping here, some reviewing there. I'm still learning, experimenting and even getting pushback from stakeholders telling me to "stay in my lane."</p>
-          <p>But the curiosity is still there, I assure you. In fact, <strong>not having this fully figured out genuinely bothers me</strong>. That's why this page exists, to share my AI journey, unfiltered and messy.</p>
+          <p>So where are they? I'd love to point to one clean, end-to-end example of designing for AI, with AI, and shipping with AI. But the truth is, my AI work has happened in pieces, some prototyping here, some reviewing there. I'm still learning, experimenting and even getting pushback from stakeholders.</p>
+          <p>But the curiosity is still there, I assure you. In fact, <strong>not having this fully figured out genuinely bothers me</strong>. That's why this page exists, to share my AI journey so far.</p>
         </div>
       </div>
     </section>
@@ -100,9 +99,9 @@
       <div class="container">
         <h2 class="section-heading fade-up">Beta Mode</h2>
         <p class="section-subtext fade-up stagger-1" style="margin-top: 12px; max-width: none;">This was a request from the client, to find a way to explain to users that this version is beta and that they should expect the screen to change over the next few months. I first designed it in Figma, then took screenshots of my Figma designs and added them to Claude Design to prototype it.</p>
-        <div class="solution-image-wrap fade-up stagger-2" style="margin-top: 32px; max-width: 480px; margin-left: auto; margin-right: auto;">
+        <div class="solution-image-wrap fade-up stagger-2" style="margin-top: 32px; max-width: 480px;">
           <video src="assets/ai_sandbox/beta-modal.mov" class="solution-image" autoplay loop muted playsinline controls onclick="this.requestFullscreen(); this.play();" style="margin-top: 0; height: 320px; width: 100%; object-fit: cover; cursor: pointer;"></video>
-          <div class="solution-image-caption">Designed in Figma, prototyped in Claude Design.</div>
+          <div class="solution-image-caption" style="text-align: left;">Designed in Figma, prototyped in Claude Design.</div>
         </div>
       </div>
     </section>
@@ -116,11 +115,11 @@
         <div class="mockup-compare-row fade-up stagger-1" style="margin-top: 32px;">
           <div class="solution-image-wrap">
             <video src="assets/ai_sandbox/beta-modal-claude-code.mov" class="solution-image" autoplay loop muted playsinline controls onclick="this.requestFullscreen(); this.play();" style="margin-top: 0; height: 320px; width: 100%; object-fit: cover; cursor: pointer;"></video>
-            <div class="solution-image-caption">Claude Code's prototype, built using the Figma MCP</div>
+            <div class="solution-image-caption" style="text-align: left;">Claude Code's prototype, built using the Figma MCP</div>
           </div>
           <div class="solution-image-wrap">
             <img src="assets/ai_sandbox/claude-code-beta-modal-image.png" alt="Claude Code's beta modal design, with off-brand colors and a grey background" class="solution-image" style="margin-top: 0; height: 320px; width: 100%; object-fit: cover;" />
-            <div class="solution-image-caption">The resulting design, wrong colors and an unintended grey background</div>
+            <div class="solution-image-caption" style="text-align: left;">The resulting design, wrong colors and an unintended grey background</div>
           </div>
         </div>
       </div>
@@ -133,9 +132,9 @@
         <div class="about-bio-text fade-up stagger-1" style="margin-top: 24px;">
           <p>I used Claude in Chrome to do a UX review, asking it to explore the platform and tell me what it found.</p>
         </div>
-        <div class="solution-image-wrap fade-up stagger-2" style="margin-top: 32px; max-width: 480px; margin-left: auto; margin-right: auto;">
+        <div class="solution-image-wrap fade-up stagger-2" style="margin-top: 32px; max-width: 480px;">
           <video src="assets/ai_sandbox/assessments-ux-review.mov" class="solution-image" autoplay loop muted playsinline controls onclick="this.requestFullscreen(); this.play();" style="margin-top: 0; height: 320px; width: 100%; object-fit: cover; cursor: pointer;"></video>
-          <div class="solution-image-caption">Claude in Chrome exploring the Assessments Hub for a UX review</div>
+          <div class="solution-image-caption" style="text-align: left;">Claude in Chrome exploring the Assessments Hub for a UX review</div>
         </div>
 
         <div class="about-bio-text fade-up stagger-3" style="margin-top: 48px;">
@@ -144,18 +143,40 @@
         <div class="solution-images-grid fade-up stagger-4">
           <div class="solution-image-wrap">
             <img src="assets/ai_sandbox/assessment-hub-review-1.png" alt="Excerpt from the Claude in Chrome QA doc flagging styling discrepancies, page 1" class="solution-image" style="margin-top: 0;" />
-            <div class="solution-image-caption">Excerpt from the 16-page QA doc</div>
+            <div class="solution-image-caption" style="text-align: left;">Excerpt from the 16-page QA doc</div>
           </div>
           <div class="solution-image-wrap">
             <img src="assets/ai_sandbox/assessment-hub-review-2.png" alt="Excerpt from the Claude in Chrome QA doc flagging styling discrepancies, page 2" class="solution-image" style="margin-top: 0;" />
-            <div class="solution-image-caption">Excerpt from the 16-page QA doc</div>
+            <div class="solution-image-caption" style="text-align: left;">Excerpt from the 16-page QA doc</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BRANDHUB -->
+    <section class="section about-bio" aria-label="Brandhub, an internal AI design tool" style="padding-top: 96px; background: var(--theme-secondary);">
+      <div class="container">
+        <h2 class="section-heading fade-up">Brandhub</h2>
+        <div class="about-bio-text fade-up stagger-1" style="margin-top: 24px;">
+          <p>The design team decided to create something called Brandhub. We realized that with AI we could build our own internal tool to help with design tasks. Brandhub would be the place where we created consistency across our designs for clients, as well as a central hub for design thinking, discovery, and prototyping. As an added function, we made it an MCP so it could be used inside real code.</p>
+          <p>We started by importing two brands, MIT and Cognia, adding the styling and components for each. But over time, Brandhub started getting too big, and we had to start breaking it down into smaller pieces. For example, instead of design rules living in one Markdown file, we needed to separate them into multiple files.</p>
+          <p>We hit a wall when we proposed the idea to the dev team, who were understandably apprehensive about designers messing around in their code, especially without strong coding knowledge. So instead of an MCP, I proposed an npm package that developers could install and use themselves. The package contained the setup steps, plus the rules and components of the Cognia design system. Instead of living in a Figma design system, it was all now in Markdown files and a global.css file.</p>
+        </div>
+        <div class="mockup-compare-row fade-up stagger-2" style="margin-top: 32px; align-items: flex-start; justify-content: flex-start;">
+          <div class="solution-image-wrap" style="flex: 0 0 auto; max-width: 480px;">
+            <video src="assets/ai_sandbox/brandhub-npm-package-walkthrough.mov" class="solution-image" autoplay loop muted playsinline controls onclick="this.requestFullscreen(); this.play();" style="margin-top: 0; height: 320px; width: 100%; object-fit: cover; cursor: pointer;"></video>
+            <div class="solution-image-caption" style="text-align: left;">Walkthrough of the Brandhub npm package</div>
+          </div>
+          <div class="solution-image-wrap" style="flex: 0 0 auto; max-width: 280px;">
+            <img src="assets/observations/github_repo_npm_package.png" alt="GitHub repository for the Brandhub npm design package" class="solution-image" style="margin-top: 0; height: 320px; width: 100%; object-fit: cover;" />
+            <div class="solution-image-caption" style="text-align: left;">The GitHub repo for the Brandhub npm package, built for developers to install directly</div>
           </div>
         </div>
       </div>
     </section>
 
     <!-- WORK IN PROGRESS -->
-    <section class="section" aria-label="Work in progress" style="background: var(--clr-white);">
+    <section class="section" aria-label="Work in progress" style="background: var(--theme-secondary);">
       <div class="container">
         <h2 class="section-heading fade-up" style="text-align: center; font-size: var(--fs-md);">This page is a work-in-progress, more to come soon!</h2>
       </div>
