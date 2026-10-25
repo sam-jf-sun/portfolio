@@ -272,7 +272,7 @@
           <a href="https://www.instagram.com/samw.ise_/" class="contact-modal-social-link" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
             <img src="assets/icons/instagram.svg" alt="" class="contact-modal-social-icon" />
           </a>
-          <a href="https://www.linkedin.com/in/samantha-sun-a6a9158a/" class="contact-modal-social-link" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.linkedin.com/in/samantha-jf-sun/" class="contact-modal-social-link" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
             <img src="assets/icons/linkedin.svg" alt="" class="contact-modal-social-icon" />
           </a>
         </div>
